@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "main sugestoes";
+  width: 900px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.main {
+  grid-area: main;
+  margin-top: 38px;
+  margin-left: 35px;
+  width: var(--main-width);
+}
+
+.main h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 12px 0 7px 0;
+}
+
+.main p:first-child {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.main p:last-child {
+  font-weight: 300;
+  font-size: 16px;
+  margin-top: 9px;
+  width: 550px;
+}
+
+.sugestoes {
+  grid-area: sugestoes;
+  margin-top: 38px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sugestoes-videos {
+  display: flex;
+  gap: 12px;
+}
+
+.sugestoes-videos h2 {
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 7px;
+}
+
+.sugestoes-videos p {
+  font-size: 11px;
+  font-weight: 300;
+  padding-bottom: 5px;
+}
+
+.propaganda {
+  width: 270px;
+  height: 35px;
+  text-align: center;
+  padding-top: 15px;
+  background-color: grey;
+  color: white;
+  font-size: 11px;
+}
+
+
+
+/* .sugestoes-videos {
+  display: flex;
+  flex-direction: column;
+  width: var(--sugestoes-width);
+  gap: 12px; /* Espaço entre vídeos sugeridos
+} */
+
+/* .sugestoes-videos h2,
+.sugestoes-videos p {
+  display: inline;
+  margin: 0 4px 0 0;
+  font-size: 14px;
+  font-weight: 400;
+} */
+
+/* @media (max-width: 950px) {
+  .container {
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "main"
+      "sugestoes";
+    height: auto;
+  }
+  .main, .sugestoes {
+    margin: 16px;
+  }
+} */

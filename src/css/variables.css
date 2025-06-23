@@ -1,0 +1,9 @@
+:root {
+  --container-width: 900px;
+  --container-height: 415px;
+  --main-width: 538px;
+  --sugestoes-width: 267px;
+  --propaganda-width: 270px;
+  --propaganda-height: 56px;
+  --cinza-propaganda: rgb(82, 82, 82);
+}
