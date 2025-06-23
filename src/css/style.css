@@ -1,107 +1,59 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-
-body {
-  font-family: "Roboto", Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+html {
+  font-family: "Roboto";
 }
 
 .container {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-areas: "main sugestoes";
+  background-color: #f7f7f7;
   width: 900px;
-  height: 500px;
-  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+    "video-destaque propaganda"
+    "video-destaque videos-sugeridos";
+  grid-template-columns: 1fr 270px;
+  grid-template-rows: 56px 1fr;
+  gap: 20px;
+  padding: 35px;
 }
 
-.main {
-  grid-area: main;
-  margin-top: 38px;
-  margin-left: 35px;
-  width: var(--main-width);
+.video-destaque {
+  grid-area: video-destaque;
 }
 
-.main h2 {
-  font-size: 18px;
-  font-weight: 700;
-  margin: 12px 0 7px 0;
-}
-
-.main p:first-child {
-  font-weight: 300;
-  font-size: 14px;
-}
-
-.main p:last-child {
-  font-weight: 300;
-  font-size: 16px;
-  margin-top: 9px;
-  width: 550px;
-}
-
-.sugestoes {
-  grid-area: sugestoes;
-  margin-top: 38px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.sugestoes-videos {
-  display: flex;
-  gap: 12px;
-}
-
-.sugestoes-videos h2 {
-  font-size: 14px;
-  font-weight: 400;
-  padding-bottom: 7px;
-}
-
-.sugestoes-videos p {
-  font-size: 11px;
-  font-weight: 300;
-  padding-bottom: 5px;
+.video-destaque img {
+  margin-bottom: 12px;
+  width: 100%;
 }
 
 .propaganda {
-  width: 270px;
-  height: 35px;
-  text-align: center;
-  padding-top: 15px;
-  background-color: grey;
-  color: white;
-  font-size: 11px;
+  grid-area: propaganda;
 }
 
+.videos-sugeridos {
+  grid-area: videos-sugeridos;
+}
 
-
-/* .sugestoes-videos {
+.videos-sugeridos .video {
   display: flex;
-  flex-direction: column;
-  width: var(--sugestoes-width);
-  gap: 12px; /* Espaço entre vídeos sugeridos
-} */
+  gap: 5px;
+  margin-bottom: 15px;
+}
 
-/* .sugestoes-videos h2,
-.sugestoes-videos p {
-  display: inline;
-  margin: 0 4px 0 0;
+.videos-sugeridos .video .titulo {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.videos-sugeridos .video p {
+  font-size: 11px;
+  margin-bottom: 5px;
+}
+
+.video-destaque .titulo {
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+
+.video-destaque .visualizacoes {
   font-size: 14px;
-  font-weight: 400;
-} */
-
-/* @media (max-width: 950px) {
-  .container {
-    width: 100%;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "main"
-      "sugestoes";
-    height: auto;
-  }
-  .main, .sugestoes {
-    margin: 16px;
-  }
-} */
+  margin-bottom: 7px;
+}
