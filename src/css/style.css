@@ -35,7 +35,7 @@ html {
 .videos-sugeridos .video {
   display: flex;
   gap: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 }
 
 .videos-sugeridos .video .titulo {
